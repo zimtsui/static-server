@@ -8,7 +8,5 @@ const koa_static_1 = __importDefault(require("koa-static"));
 const process_1 = __importDefault(require("process"));
 const koa = new koa_1.default();
 koa.use(koa_static_1.default('/home/zim/bithub/monitor/dist'));
-console.log(process_1.default.env.PORT);
-console.log(process_1.default.env.NODE_ENV);
 koa.listen(process_1.default.env.PORT);
 //# sourceMappingURL=index.js.map
