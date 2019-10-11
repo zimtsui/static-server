@@ -6,7 +6,7 @@ module.exports = (pandora) => {
         .fork('static-server', './')
         .env({
             NODE_ENV: pandora.dev ? 'development' : 'production',
-            PORT: pandora.dev ? 8000 : 12000,
+            PORT: pandora.dev ? 8000 : 12003,
         });
 
     /**
