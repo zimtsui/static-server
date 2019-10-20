@@ -6,7 +6,9 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc -b"
+        "build": "tsc -b",
+        "dev": "env NODE_ENV=development node -r source-map-support/register .",
+        "start": "pm2 start ./ecosystem.config.js"
     },
     "repository": {
         "type": "git",
@@ -19,13 +21,14 @@
     },
     "homepage": "https://github.com/zimtsui/static-server#readme",
     "devDependencies": {
-        "@types/node": "^12.7.12",
         "typescript": "^3.6.4"
     },
     "dependencies": {
         "@types/koa": "^2.0.50",
         "@types/koa-static": "^4.0.1",
+        "@types/node": "^12.11.1",
         "koa": "^2.8.2",
-        "koa-static": "^5.0.0"
+        "koa-static": "^5.0.0",
+        "source-map-support": "^0.5.13"
     }
 }
